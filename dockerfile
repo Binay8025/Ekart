@@ -1,10 +1,8 @@
 FROM: alpine:latest
 
-RUN:  mvn install 
-
 WORKDIR: /usr/src/app
 
-COPY: target/.jar*
+COPY: target/.jar* /usr/src/app
 
 EXPOSE: 8087
 
