@@ -1,10 +1,12 @@
 FFROM tomcat:latest
 
-WORKDIR usr/src/my_app
+ENV my_app /usr/src/app
 
-COPY target/*.jar usr/src/my_app
+WORKDIR $my_app
+
+COPY target/shopping-cart-0.0.1-SNAPSHOT.jar usr/src/my_app
 
 EXPOSE 8087
 
-CMD ["java -jar myapp.jar"]
+CMD ["java -jar app.jar"]
 
