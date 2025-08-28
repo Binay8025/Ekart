@@ -1,9 +1,10 @@
-FROM: alpine:latest
+FFROM tomcat:latest
 
-WORKDIR: /usr/src/app
+WORKDIR usr/src/my_app
 
-COPY: target/.jar* app
+COPY target/*.jar usr/src/my_app
 
-EXPOSE: 8087
+EXPOSE 8087
 
-CMD: ["java", "-jar", "app.jar"]
+CMD ["java -jar myapp.jar"]
+
