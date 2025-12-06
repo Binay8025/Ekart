@@ -1,4 +1,4 @@
-FFROM tomcat:latest
+FROM tomcat:latest
 
 ENV my_app /usr/src/app
 
