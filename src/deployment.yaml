@@ -39,16 +39,3 @@ spec:
             cpu: "500m"
             memory: "1Gi"
 
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 8070
-          initialDelaySeconds: 60
-          periodSeconds: 10
-
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 8070
-          initialDelaySeconds: 90
-          periodSeconds: 20
