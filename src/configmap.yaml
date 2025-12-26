@@ -6,5 +6,5 @@ metadata:
 data:
   APP_ENV: "dev"
   APP_PORT: "8083"
-  DB_HOST: "mysql.prod.svc.cluster.local"
+  DB_HOST: "mysql.dev.svc.cluster.local"
   DB_NAME: "shoppingdb"
