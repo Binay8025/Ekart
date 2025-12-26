@@ -9,4 +9,4 @@ spec:
     app: shopping-cart
   ports:
   - port: 80
-    targetPort: 8083
+    targetPort: 8087
