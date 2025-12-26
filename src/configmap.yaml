@@ -2,9 +2,9 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: shopping-cart-config
-  namespace: Dev
+  namespace: dev
 data:
-  APP_ENV: "Dev"
+  APP_ENV: "dev"
   APP_PORT: "8083"
   DB_HOST: "mysql.prod.svc.cluster.local"
   DB_NAME: "shoppingdb"
