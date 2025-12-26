@@ -23,7 +23,7 @@ spec:
         image: binay8025/binayp:dev
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 8083
+        - containerPort: 8070
 
         envFrom:
         - configMapRef:
@@ -42,13 +42,13 @@ spec:
         readinessProbe:
           httpGet:
             path: /actuator/health
-            port: 8083
+            port: 8070
           initialDelaySeconds: 20
           periodSeconds: 10
 
         livenessProbe:
           httpGet:
             path: /actuator/health
-            port: 8083
+            port: 8070
           initialDelaySeconds: 40
           periodSeconds: 20
