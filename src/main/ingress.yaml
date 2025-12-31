@@ -3,6 +3,10 @@ kind: Ingress
 metadata:
   name: shopping-cart-ingress
   namespace: dev
+  annotations:
+    nginx.ingress.kubernetes.io/use-forwarded-headers: "true"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "60"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "60"
 spec:
   ingressClassName: nginx
   rules:
