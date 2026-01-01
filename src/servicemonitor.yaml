@@ -9,7 +9,8 @@ spec:
       app: shopping-cart
   namespaceSelector:
     matchNames:
-    - default
+    - dev
   endpoints:
   - port: metrics
+    path: /metrics
     interval: 15s
