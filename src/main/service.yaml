@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: shopping-cart-svc
   namespace: dev
+  labels:
+    app: shopping-cart
 spec:
   type: ClusterIP
   selector:
